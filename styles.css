@@ -35,7 +35,7 @@ img {
 .logo-wrapper {
     position: absolute;
     left: 0;
-    top: 20%;
+    top: 10%;
     width: 100%;
     height: 4rem;
 
@@ -48,10 +48,22 @@ img {
     backdrop-filter: brightness(0.35);
 }
 
+.logo {
+    max-height: 80%;
+    filter: drop-shadow(2px 4px 6px #e6332d);
+}
+
 .hero-image {
     height: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+.attribution-link {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
 }
 
 .form-section {
