@@ -23,6 +23,10 @@ img {
     max-width: 100%;
 }
 
+p {
+    line-height: 1.8;
+}
+
 a, a:visited {
     color: #ba211c;
     text-decoration: none;
@@ -102,7 +106,7 @@ a, a:visited {
     margin: 0;
     background-color: #fff;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, clamp(24ch, 262px, 300px));
     grid-auto-rows: 4rem;
     column-gap: 70px;
     box-shadow: 0 2px 8px 2px rgb(0 0 0 / 10%);
@@ -140,6 +144,12 @@ input {
     padding: 0.5rem 0.75rem;
 }
 
+input:focus, input:focus-visible {
+    outline: none;
+    border: 1px solid #1D4ED8;
+    box-shadow: 0 2px 8px 2px rgb(0 0 0 / 10%);
+}
+
 .form__submit {
     margin: 2rem 50px 50px 50px;
     padding: 1rem 8px;
@@ -151,9 +161,19 @@ input {
     font-weight: bold;
     font-size: 1rem;
     text-shadow: 0 2px 2px rgb(95 0 19 / 65%);
+    transition: filter 0.3s;
+}
+
+.form__submit:hover {
+    filter: brightness(1.2);
+    box-shadow: 0 2px 8px 2px rgb(0 0 0 / 10%);
+}
+
+.form__submit:active {
+    filter: brightness(0.95);
+    box-shadow: none;
 }
 
 .log-in {
     padding: 0 0 0 50px;
-
 }
