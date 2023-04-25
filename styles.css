@@ -144,6 +144,20 @@ input {
     padding: 0.5rem 0.75rem;
 }
 
+.error {
+    border: 1px solid #B91C1C;
+}
+
+.error-text {
+    display: none;
+    color: #B91C1C;
+    font-size: 14px;
+}
+
+.password-mismatch-error ~ .error-text {
+    display: block;
+}
+
 input:focus, input:focus-visible {
     outline: none;
     border: 1px solid #1D4ED8;
