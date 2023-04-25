@@ -11,7 +11,7 @@
 <body>
 <main class="content">
     <aside class="aside-hero">
-        <img src="./images/hero-image.webp" alt="Hero image from Yakuza game">
+        <img src="./images/hero-image.webp" alt="Hero image from Yakuza game" class="hero-image">
         <div class="logo-wrapper">
             <img src="https://placeholder.pics/svg/34x34" alt="logo">
             <h1>Header</h1>
@@ -19,35 +19,44 @@
     </aside>
     <section class="form-section">
         <div class="form-description">
-            <p>This is not a real online service! You know you need something
+            <p><strong>This is not a real online service! You know you need something
                 like this in your life to help you realize your deepest dreams.
-                Sign up now to get started.</p>
-            <p>You know you want to.</p>
+                Sign up now to get started.</strong></p>
+            <p><strong>You know you want to.</strong></p>
         </div>
-        <form action="#" method="get">
-            <fieldset>
-                <legend><h2>Let's do this!</h2></legend>
-                <label for="first-name">first name</label>
-                <input type="text" id="first-name" name="first-name" autocomplete="given-name">
-                <label for="last-name">last name</label>
-                <input type="text" id="last-name" name="last-name" autocomplete="family-name">
-                <label for="email">email</label>
-                <input type="email" id="email" name="email" autocomplete="email">
-                <label for="phone-number">phone number</label>
-                <input type="tel" id="phone-number" name="phone-number" autocomplete="tel">
-                <label for="password">password</label>
-                <input type="password" id="password" name="password" autocomplete="new-password">
-                <label for="password-confirmation">confirm password</label>
-                <input type="password" id="password-confirmation" name="password-confirmation"
-                       autocomplete="new-password">
+        <form action="/" method="get" class="form">
+            <fieldset class="form__fieldset">
+                <legend><h2 class="legend-header">Let's do this!</h2></legend>
+                <div class="input-wrapper">
+                    <label for="first-name">first name</label>
+                    <input type="text" id="first-name" name="first-name" autocomplete="given-name">
+                </div>
+                <div class="input-wrapper">
+                    <label for="last-name">last name</label>
+                    <input type="text" id="last-name" name="last-name" autocomplete="family-name">
+                </div>
+                <div class="input-wrapper">
+                    <label for="email">email</label>
+                    <input type="email" id="email" name="email" autocomplete="email">
+                </div>
+                <div class="input-wrapper">
+                    <label for="phone-number">phone number</label>
+                    <input type="tel" id="phone-number" name="phone-number" autocomplete="tel">
+                </div>
+                <div class="input-wrapper">
+                    <label for="password">password</label>
+                    <input type="password" id="password" name="password" autocomplete="new-password">
+                </div>
+                <div class="input-wrapper">
+                    <label for="password-confirmation">confirm password</label>
+                    <input type="password" id="password-confirmation" name="password-confirmation"
+                           autocomplete="new-password">
+                </div>
             </fieldset>
-            <button type="submit">Create Account</button>
+            <button type="submit" class="form__submit">Create Account</button>
         </form>
-        <div>Already have an account? <a href="#">Log in</a></div>
+        <div class="log-in">Already have an account? <a href="#">Log in</a></div>
     </section>
 </main>
-<footer class="footer">
-    <div>Made by <a href="https://github.com/Prokhnitskyi" target="_blank" title="Github">Andrii Prokhnitskyi</a></div>
-</footer>
 </body>
 </html>
