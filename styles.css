@@ -71,6 +71,7 @@ a, a:visited {
 
 .hero-image {
     height: 100%;
+    width: 100%;
     object-fit: cover;
     object-position: center;
 }
@@ -165,6 +166,7 @@ input:focus, input:focus-visible {
 }
 
 .form__submit {
+    display: block;
     margin: 2rem 50px 50px 50px;
     padding: 1rem 8px;
     min-width: 235px;
@@ -190,4 +192,43 @@ input:focus, input:focus-visible {
 
 .log-in {
     padding: 0 0 0 50px;
+}
+
+@media screen and (max-width: 1200px) {
+    .content {
+        grid-template-columns: 320px 1fr;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .content {
+        grid-template-columns: 240px 1fr;
+    }
+
+    .form__fieldset {
+        grid-template-columns: 1fr;
+    }
+
+    legend {
+        grid-column: 1;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .content {
+        grid-template-columns: 1fr;
+        grid-auto-rows: calc(30vh) 1fr;
+    }
+
+    .form-section {
+        grid-template-rows: auto;
+    }
+
+    .form__submit {
+        margin: 2rem auto;
+    }
+
+    .form__fieldset, .form-description {
+        padding: 1.5rem;
+    }
 }
